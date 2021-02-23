@@ -32,6 +32,8 @@ Route::group(['middleware' => 'auth.role'], function () {
     // route of  users
     Route::get('/users', 'UserController@index');
     Route::get('/users/department/{id}', 'UserController@getUserDepartment');
+//    ali
+    Route::put('/users/edit/{id}', 'UserController@editUser');
 });
 
 // authinticate user
